@@ -1,0 +1,200 @@
+/* CSS code with comments for responsive layout */
+
+/* Container for the about section */
+.about-intro {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Arrange items in a row */
+    justify-content: space-between; /* Space items evenly along the main axis */
+    align-items: center; /* Center items along the cross axis */
+    padding: 20px; /* Add some padding for spacing */
+  }
+  
+  /* Style for the image */
+  .about-img img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+  }
+  
+  /* Style for the text */
+  .about-text {
+    /* text-size */
+
+    max-width: 50%; /* Limit the width of the text */
+  }
+  .text1{
+    font-size: 1.3rem;
+    text-align: justify;
+  }
+  .box1{
+    transition: border 0.3s, box-shadow 0.3s; /* Add smooth transition for hover effect */
+
+    /* border: 2px solid #ff5454; Light red border on hover */
+
+    box-shadow: 0 0 10px rgba(255, 84, 84, 0.5); /* Shadow on hover */
+}
+  
+  /* Responsive styles for smaller screens */
+  @media screen and (max-width: 768px) {
+    .about-intro {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: flex-start; /* Align items to the start of the cross axis */
+    }
+  
+    .about-text {
+      max-width: 100%; /* Allow text to take full width on smaller screens */
+      margin-top: 20px; /* Add margin for spacing between image and text */
+    }
+  }
+
+  .text2 {
+    /* font-style: u; */
+    text-decoration: underline;
+    font-size: 400%; /* Set the font size to 500% of the parent element's font size */
+    text-align: center; /* Center the text */
+  }
+  
+
+
+  .timeline {
+    position: relative;
+  }
+  .timeline__progressbar {
+    --width: 2px;
+    --left: -moz-calc(((15vw / 2) + 15px) - (var(--width) / 2));
+    --left: calc(((15vw / 2) + 15px) - (var(--width) / 2));
+    position: absolute;
+    left: var(--left);
+    width: var(--width);
+    height: 100%;
+    background-color: #2c2c2c;
+    z-index: -1;
+  }
+  .timeline__progressbar::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: var(--left);
+    width: var(--width);
+    height: 50vh;
+    background: -webkit-gradient(linear, left top, left bottom, from(#b25d46), color-stop(#a74141), color-stop(#743879), to(#4a3ca0));
+    background: -webkit-linear-gradient(#b25d46, #a74141, #743879, #4a3ca0);
+    background: -moz-linear-gradient(#b25d46, #a74141, #743879, #4a3ca0);
+    background: -o-linear-gradient(#b25d46, #a74141, #743879, #4a3ca0);
+    background: linear-gradient(#b25d46, #a74141, #743879, #4a3ca0);
+  }
+  @media screen and (min-width: 800px) {
+    .timeline__progressbar {
+      --width: 3px;
+      --left: -moz-calc(50% - (var(--width) / 2));
+      --left: calc(50% - (var(--width) / 2));
+    }
+  }
+  .timeline__block {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 15vw 1fr;
+        grid-template-columns: 15vw 1fr;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+       -moz-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  @media screen and (min-width: 800px) {
+    .timeline__block {
+      -ms-grid-columns: 1fr 15vh 1fr;
+          grid-template-columns: 1fr 15vh 1fr;
+    }
+  }
+  @media screen and (min-width: 800px) {
+    .timeline__block__head {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      grid-column: 1 / 2;
+      text-align: right;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 50vh;
+    }
+  }
+  .timeline__block__body {
+    grid-column: 2 / -1;
+  }
+  @media screen and (min-width: 800px) {
+    .timeline__block__body {
+      grid-column: 3 / -1;
+    }
+  }
+  .timeline__block__bullet-point {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  @media screen and (min-width: 800px) {
+    .timeline__block__bullet-point {
+      -ms-grid-column: 2;
+      -ms-grid-column-span: 1;
+      grid-column: 2 / 3;
+    }
+  }
+  .timeline__block__circle {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: 4px solid #0b0b0b;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+  .timeline__block__title {
+    font-size: 3rem;
+  }
+  @media screen and (max-width: 799px) {
+    .timeline__block__title {
+      margin-top: -1.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+  @media screen and (min-width: 800px) {
+    .timeline__block__title {
+      line-height: 0;
+    }
+  }
+  .timeline__block__text {
+    font-size: 1.6rem;
+  }@media screen and (min-width: 500px) {
+    .timeline__block__text {
+      font-size: 1.8rem;
+    }
+  }
+  .timeline__hider {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: -2px;
+    width: 100%;
+    height: 50vh;
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#0b0b0b));
+    background: -webkit-linear-gradient(transparent, #0b0b0b);
+    background: -moz-linear-gradient(transparent, #0b0b0b);
+    background: -o-linear-gradient(transparent, #0b0b0b);
+    background: linear-gradient(transparent, #0b0b0b);
+    pointer-events: none;
+  }
+  
+  
+  
+  
+  
+  
+    
