@@ -46,7 +46,7 @@
 
 .planet,
 #moon {
-  z-index: 100;
+  z-index: 10;
 }
 
 #sun,
@@ -74,17 +74,17 @@
 /* Media Queries for responsiveness */
 @media screen and (max-width: 768px) {
   .skill {
-    height: 60vh;
+    height: 10vh;
   }
 
   .object {
-    transform: translateY(30vh);
+    transform: translateY(10vh);
   }
 
   #belt {
     height: 40vmin;
     width: 40vmin;
-    margin-top: 20vh;
+    margin-top: 05vh;
   }
 
   #moon,
@@ -183,7 +183,7 @@ font-weight: 80rem;
   }
   .project_information > p {
     margin-top: 1em;
-    text-align: center;
+    text-align: justify;
   }
   .project_information > div:nth-child(3) {
     margin-top: 0.5em;
@@ -262,5 +262,6 @@ font-weight: 80rem;
   }
 
   .work-container{
-    padding-top:20rem ;
+    padding-top:60rem ;
   }
+  
