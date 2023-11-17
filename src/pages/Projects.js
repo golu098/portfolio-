@@ -106,7 +106,9 @@ const Projects = () => {
       <div className='work-container'>
 
         <div className="section">
-          <h2 className="section__title different">Projects</h2>
+        <h1 style={{ textAlign: 'center', fontWeight: 800 }} className="a2">
+  Projects
+</h1>
           <div className="allProjects">
             <div className="projects_container" data-aos="fade-right">
               <div className="project">
@@ -144,7 +146,7 @@ const Projects = () => {
                       </span>
                     </a>
                     <a
-                      href="https://github.com/golu098"
+                      href="https://github.com/golu098/StudyNotionMERN"
                       target="_blank"
                       rel="noreferrer"
                     >
