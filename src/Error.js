@@ -6,7 +6,7 @@ function Error() {
     <div>
       <img
         src="https://miro.medium.com/v2/resize:fit:1400/1*DeBkx8vjbumpCO-ZkPE9Cw.png"
-        alt="Error Image"
+        alt="Error"
         style={{ width: '100%', height: 'auto', maxWidth: '100%' }} // Making the image responsive
       />
       <Link to="/" >

@@ -1,22 +1,23 @@
 import React, { useEffect } from 'react';
 import "./project.css";
-import { FaReact, FaHardHat } from "react-icons/fa";
+
+import { FaReact } from "react-icons/fa";
 import {
-  SiBlockchaindotcom as a,
+  // SiBlockchaindotcom as a,
   SiHtml5,
-  SiMaterialui,
-  SiChai as b,
-  SiEthereum as c,
+  // SiMaterialui,
+  // SiChai as b,
+  // SiEthereum as c,
   SiExpress,
-  SiSocketdotio as d,
-  SiTailwindcss as e,
-  SiReactrouter as f,
-  SiJavascript as g,
+  // SiSocketdotio as d,
+  // SiTailwindcss as e,
+  // SiReactrouter as f,
+  // SiJavascript as g,
   SiMongodb,
   SiNodedotjs,
 } from "react-icons/si";
 import { DiCss3 } from "react-icons/di";
-import { VscJson } from "react-icons/vsc";
+// import { VscJson } from "react-icons/vsc";
 import { IoLogoJavascript } from "react-icons/io";
 
 const Projects = () => {
@@ -27,10 +28,10 @@ const Projects = () => {
     let p_radians = new Array(8).fill(0);
     const p_velocities = [1.607, 1.174, 1, 0.802, 0.434, 0.323, 0.228, 0.182];
 
-    const moon = document.querySelector('#moon');
-    const m_radius = 8;
-    let m_radians = 0;
-    const m_velocity = 10;
+    // const moon = document.querySelector('#moon');
+    // const m_radius = 8;
+    // let m_radians = 0;
+    // const m_velocity = 10;
 
     const p_orbits = document.querySelectorAll('.p-orbit');
     const m_orbit = document.querySelector('#m-orbit');
