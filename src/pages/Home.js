@@ -3,14 +3,20 @@ import "./home.css";
 const Home = () => {
   return (
     <div>
-      <p className='welcome-text'>
-        Welcome to Dev Wonderland!
- </p>
-    <div className='welcome-gif'>
-      <img src='https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmF4ZzE3dnJqcGtjYWNjM3FlNzVqeXdldGdpcGZqenhqYTVnMG91MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/pUOtybrPsOXhKx5SKJ/giphy.gif' alt="img"/>
-      {/* <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHZibDEyNzkzZDVpbmxzemMxMDB1YjNvZnRkbDEzanQyNDF5aXR0MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/K77lWFobBeX5xcLsdp/giphy.gif" alt="img"/> */}
+      <div className='poster-main'>
+        <div className='poster-img'>
+        <img src='https://png.pngtree.com/thumb_back/fh260/background/20230527/pngtree-person-hand-reaching-for-gold-coins-on-black-background-image_2650070.jpg'alt='poster'/>
       </div>
-
+      </div>
+      <div className='flex flex-row'>
+        <div className='basis-1/2'>
+          <p>You Give me Idea</p>
+          <p>I Will Give You Products(Applications) </p>
+        </div>
+        <div className='basis-1/2'>
+<img src="https://i.pinimg.com/originals/e7/f0/96/e7f096dd0f8c3d3841b7259aa8b008c4.gif" alt="hand"/>
+        </div>
+      </div>
     </div>
   )
 }

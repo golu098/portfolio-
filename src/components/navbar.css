@@ -1,0 +1,29 @@
+/* navbar.css */
+
+.navbar {
+    background-color: black;
+    color: white;
+}
+
+.nav-logo {
+    /* color: white !important; Set text color to white */
+    /* padding-left: 0.2rem !important; */
+}
+
+
+
+.nav-itm {
+    background-color: black; /* If you want a black background for nav-items */
+    padding-left: 9rem !important;
+    padding-right: 4rem !important;
+    color: white !important; /* Set text color to white */
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .nav-itm
+     {
+        padding-left: 2rem !important; /* Adjust this value as needed for mobile view */
+        padding-right: 4rem !important;
+    }
+}
